@@ -154,7 +154,9 @@ module.exports.postQuote = (req, res) => {
     let value = parseInt(req.body.value) || null;
 
     if (mortId === null || value === null || value < 0) {
-        res.sendStatus(404);
+        res.status(404).json({
+            'message': 'Missing mortgage ID and/or value'
+        });
         return;
     }
 
