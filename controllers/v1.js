@@ -167,6 +167,8 @@ module.exports.postQuote = (req, res) => {
             });
         })
         .catch((error) => {
-            res.sendStatus(400);
+            res.status(404).json({
+                'message': 'Mortgage ID not found'
+            });
         });
 };
