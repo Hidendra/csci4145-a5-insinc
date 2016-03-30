@@ -4,7 +4,7 @@ let Promise = require('promise');
 let request = require('request');
 let Quote = require('../models/quote.js');
 
-let MBR_BASE_URL = 'http://134.190.188.171:3000/api';
+let MBR_BASE_URL = 'http://54.175.15.171:3000/api';
 let MUN_BASE_URL = 'http://127.0.0.1:3000/v1';
 
 /**
