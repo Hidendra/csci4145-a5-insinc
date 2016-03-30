@@ -167,6 +167,6 @@ module.exports.postQuote = (req, res) => {
             });
         })
         .catch((error) => {
-            res.sendStatus(404);
+            res.sendStatus(400);
         });
 };
